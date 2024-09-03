@@ -16,6 +16,8 @@
         background-color: #1a1a1a;
         min-height: 100vh;
         color: whitesmoke;
+        padding-left: 24px;
+        padding-right: 24px;
       }
 
       .header {
@@ -56,11 +58,40 @@
         align-items: center;
         gap: 12px;
       }
+
+      .story {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+      }
+
+      .story-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .story-image {
+        width: 56px;
+        height: 56px;
+        border-radius: 999px;
+
+        background: linear-gradient(
+          45deg,
+          #f09433 0%,
+          #e6683c 25%,
+          #dc2743 50%,
+          #cc2366 75%,
+          #bc1888 100%
+        );
+      }
     </style>
   </head>
 
   <body>
-    <div class="container">
+    <main class="container">
       <header class="header">
         <div class="logo">
           <div
@@ -108,6 +139,48 @@
           </div>
         </div>
       </header>
-    </div>
+
+      <section class="story">
+        <div class="story-container">
+          <div class="story-image"></div>
+          <span>Your story</span>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image"></div>
+          <span>j_uu22uuuu</span>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image"></div>
+          <span>ycj_aaaaaa</span>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image"></div>
+          <span>ycj_aaaaaa</span>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image"></div>
+          <span>ycj_aaaaaa</span>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image"></div>
+          <span>ycj_aaaaaa</span>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image"></div>
+          <span>ycj_aaaaaa</span>
+        </div>
+
+        <div class="story-container">
+          <div class="story-image"></div>
+          <span>ycj_aaaaaa</span>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
