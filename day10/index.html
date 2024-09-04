@@ -87,6 +87,46 @@
         font-size: 12px;
         text-align: center;
       }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        border-radius: 8px;
+        gap: 16px;
+      }
+
+      .card-description {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .card img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .card-description span {
+        color: #999;
+      }
+
+      .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        .card {
+          flex: 1 1 calc(50% - 32px);
+        }
+
+        body {
+          background-color: green;
+        }
+      }
     </style>
   </head>
 
@@ -135,6 +175,28 @@
           <span>호수 근처</span>
         </div>
       </nav>
+
+      <div class="card-container">
+        <div class="card">
+          <img src="https://placehold.co/600x400" />
+
+          <div class="card-description">
+            <p>프린스의 '퍼플 레인' 하우스</p>
+            <span>호스트: 웬디 님과 리사 님</span>
+            <p>9월부터 예약 가능</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://placehold.co/600x400" />
+
+          <div class="card-description">
+            <p>프린스의 '퍼플 레인' 하우스</p>
+            <span>호스트: 웬디 님과 리사 님</span>
+            <p>9월부터 예약 가능</p>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
