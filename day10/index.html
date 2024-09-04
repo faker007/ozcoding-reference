@@ -28,18 +28,15 @@
       .search-input-button {
         display: flex;
         width: 100%;
-        max-width: 85vw;
+        max-width: 85vw; /* vw(viewport width), vh (viewport height) */
         height: 34px;
         border-radius: 999px;
         gap: 12px;
         padding: 12px;
         outline: none;
         border: none;
-        background-color: #fff;
-        box-shadow: 10px 10px 49px -6px rgba(0, 0, 0, 0.28);
-        -webkit-box-shadow: 10px 10px 49px -6px rgba(0, 0, 0, 0.28);
-        -moz-box-shadow: 10px 10px 49px -6px rgba(0, 0, 0, 0.28);
-        align-items: center;
+        background-color: #fff; /* 참고 사항: white <-> transparent */
+        box-shadow: 10px 10px 49px -6px rgba(0, 0, 0, 0.28); /* CSS Box shadow Generator */
         padding-left: 32px;
       }
 
@@ -51,7 +48,6 @@
 
       .search-input-button-text-row {
         display: flex;
-        flex-direction: row;
         gap: 12px;
       }
 
@@ -69,7 +65,6 @@
 
       .nav-icons {
         display: flex;
-        flex-wrap: nowrap;
         gap: 24px;
         overflow-x: auto;
       }
