@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에어비앤비 클론 코딩</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      p,
+      span {
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 16px;
+      }
+
+      .search-input-button {
+        display: flex;
+        width: 100%;
+        max-width: 85vw;
+        height: 34px;
+        border-radius: 999px;
+        gap: 12px;
+        padding: 12px;
+        outline: none;
+        border: none;
+        background-color: #fff;
+        box-shadow: 10px 10px 49px -6px rgba(0, 0, 0, 0.28);
+        -webkit-box-shadow: 10px 10px 49px -6px rgba(0, 0, 0, 0.28);
+        -moz-box-shadow: 10px 10px 49px -6px rgba(0, 0, 0, 0.28);
+        align-items: center;
+        padding-left: 32px;
+      }
+
+      .search-input-button-icon {
+        width: 32px;
+        height: 32px;
+        background-color: green;
+      }
+
+      .search-input-button-text-row {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+      }
+
+      .search-input-button-text-row span {
+        color: #999;
+        font-size: 12px;
+      }
+
+      .search-input-button-text-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2px;
+      }
+
+      .nav-icons {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+        overflow-x: auto;
+      }
+
+      .nav-icon {
+        width: 32px;
+        height: 32px;
+        background-color: green;
+      }
+
+      .nav-icon-container {
+        width: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .nav-icon-container span {
+        font-size: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="search-input-button">
+        <div class="search-input-button-icon"></div>
+        <div class="search-input-button-text-column">
+          <p>어디로 여행가세요?</p>
+          <div class="search-input-button-text-row">
+            <span>어디든지</span>
+            <span>언제든 일주일</span>
+            <span>게스트 추가</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav-icons">
+        <div class="nav-icon-container">
+          <div class="nav-icon"></div>
+          <span>컬처 아이콘</span>
+        </div>
+
+        <div class="nav-icon-container">
+          <div class="nav-icon"></div>
+          <span>멋진 수영장</span>
+        </div>
+
+        <div class="nav-icon-container">
+          <div class="nav-icon"></div>
+          <span>최고의 전망</span>
+        </div>
+
+        <div class="nav-icon-container">
+          <div class="nav-icon"></div>
+          <span>통나무 집</span>
+        </div>
+
+        <div class="nav-icon-container">
+          <div class="nav-icon"></div>
+          <span>섬</span>
+        </div>
+
+        <div class="nav-icon-container">
+          <div class="nav-icon"></div>
+          <span>호수 근처</span>
+        </div>
+      </nav>
+    </main>
+  </body>
+</html>
