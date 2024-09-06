@@ -11,6 +11,19 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <style>
+      .btn-custom {
+        background-color: #4caf50;
+        color: white;
+        border: 2px solid #4caf50;
+      }
+
+      .btn-custom:hover {
+        background-color: white;
+        color: #4caf50;
+      }
+    </style>
   </head>
 
   <body>
@@ -242,12 +255,111 @@
       <button type="button" class="btn btn-primary">Right</button>
     </div>
 
+    <!-- 10. 버튼 그룹 예시 2 (Button Group)-->
     <div class="btn-group" role="group" aria-label="Basic example">
       <button type="button" class="btn btn-primary">1</button>
       <button type="button" class="btn btn-primary">2</button>
       <button type="button" class="btn btn-primary">3</button>
       <button type="button" class="btn btn-primary">4</button>
     </div>
+
+    <!-- 11. Hero Unit-->
+    <div class="p-5 mb-4 bg-light-rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Hello, world!</h1>
+
+        <p class="col-md-8 fs-4">
+          This is a simple hero unit, a simple jumbotron-style component for
+          calling extra attention to featured content or information.
+        </p>
+
+        <button class="btn btn-primary btn-lg" type="button">Learn more</button>
+      </div>
+    </div>
+
+    <!-- 12. 카드 그룹 (Card Group) -->
+    <div class="card-group">
+      <div class="card">
+        <img
+          src="https://via.placeholder.com/150"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">Card 1</h5>
+          <p class="card-text">
+            This card has supporting text below as a natural lead-in to
+            additional content.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://via.placeholder.com/150"
+          class="card-img-top"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">Card 2</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13. 메가 메뉴 (Navbar with Dropdown)-->
+    <nav class="navbar navbar-expanded-lg navbar-light-bg-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Dropdown Link</a
+              >
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 버튼 커스텀마이징 -->
+    <button class="btn btn-lg btn-custom" type="button">
+      버튼 커스텀마이징
+    </button>
 
     <!-- Bootstrap JavaScript and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
