@@ -10,4 +10,4 @@ obj.name = "Jane"; // 가능
 
 console.log(obj.name); // 'Jane'
 
-obj = { name: "Doe" }; // TypeError: Assignment to constant variable.
+// obj = { name: "Doe" }; // TypeError: Assignment to constant variable.
