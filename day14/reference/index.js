@@ -294,6 +294,20 @@ const checkSum = (a, b, c) => {
   }
 };
 
+// 질문1: For of를 이용한 과제 반복문 중 추가 예시
+// 참고1: For of: 배열을 순회 하는 친구이다.
+// 참고2: For in: 객체를 순회 하는 친구이다. 다만, 이 친구는 객체의 키 값을 가져 온다.
+const array = [1, 2, 3, 4, 5];
+const colors = ["red", "blue", "green"];
+
+for (element of array) {
+  console.log(element);
+}
+
+for (element of colors) {
+  console.log(element);
+}
+
 // checkEvenOdd(16);
 // checkAge(17);
 // getDayName(7);
