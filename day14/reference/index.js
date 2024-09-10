@@ -300,13 +300,13 @@ const checkSum = (a, b, c) => {
 const array = [1, 2, 3, 4, 5];
 const colors = ["red", "blue", "green"];
 
-for (element of array) {
-  console.log(element);
-}
+// for (element of array) {
+//   console.log(element);
+// }
 
-for (element of colors) {
-  console.log(element);
-}
+// for (element of colors) {
+//   console.log(element);
+// }
 
 // checkEvenOdd(16);
 // checkAge(17);
@@ -351,3 +351,6 @@ for (element of colors) {
 // console.log(addFiveToArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 // checkSum(33, 33, 33);
 // checkSum(33, 33, 34);
+// console.log(colors[0]);
+// console.log(colors[1]);
+// console.log(colors[2]);
