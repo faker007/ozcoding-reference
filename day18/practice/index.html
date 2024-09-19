@@ -1,0 +1,149 @@
+<!-- 넷플릭스 구독 랜딩 페이지-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>넷플릭스 구독 랜딩 페이지</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      span {
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .title {
+        font-size: 21px;
+        font-weight: 700;
+      }
+
+      .sub-title {
+        font-size: 16px;
+        color: #999;
+        font-weight: 400;
+      }
+
+      .table-section-container {
+        display: flex;
+      }
+
+      /* TODO: table-section-col의 자식들의 보더 바텀 */
+      .table-section-col {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+      .box-typography {
+        color: white;
+      }
+
+      .w-300 {
+        width: 300px;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .gap-50 {
+        gap: 50px;
+      }
+
+      .h-100 {
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1 class="title">Choose a plan that's right for you</h1>
+      <h2 class="sub-title">Downgrade or upgrade at any time</h2>
+
+      <div class="table-section-container">
+        <div class="table-section-col w-300">
+          <div class="h-100"></div>
+          <span>2024년 10월 19일에 종료 됩니다.</span>
+          <span>HD 화질 제공</span>
+          <span>Ultra HD 화질 제공</span>
+          <span>최대 사용자 수 생성 수</span>
+          <span>랩탑, 티비, 핸드폰, 티비 기능</span>
+          <span>무제한 영화 및 티비 프로그램</span>
+          <span>언제든지 취소 가능</span>
+          <span>무료 취소 가능</span>
+        </div>
+
+        <div class="flex gap-50">
+          <div class="table-section-col">
+            <div class="box">
+              <span class="box-typography">Basic</span>
+            </div>
+
+            <span>$7.99</span>
+            <span>X</span>
+            <span>X</span>
+            <span>1</span>
+            <span>✔️</span>
+            <span>✔️</span>
+            <span>✔️</span>
+            <span>✔️</span>
+          </div>
+          <div class="table-section-col">
+            <div class="box">
+              <span class="box-typography">Standard</span>
+            </div>
+            <span>$10.99</span>
+            <span>X</span>
+            <span>X</span>
+            <span>2</span>
+            <span>✔️</span>
+            <span>✔️</span>
+            <span>✔️</span>
+            <span>✔️</span>
+          </div>
+          <div class="table-section-col">
+            <div class="box">
+              <span class="box-typography">Premium</span>
+            </div>
+            <span>$13.99</span>
+            <span>✔️</span>
+            <span>✔️</span>
+            <span>4</span>
+            <span>✔️</span>
+            <span>✔️</span>
+            <span>✔️</span>
+            <span>✔️</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
