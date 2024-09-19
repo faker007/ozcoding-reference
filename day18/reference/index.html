@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>뉴닉 뉴스레터 랜딩 페이지</title>
+  </head>
+
+  <style>
+    /* Reset CSS */
+    body {
+      margin: 0;
+    }
+
+    /* Reset CSS */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 200vh;
+    }
+
+    .main-content-section-1 {
+      display: flex;
+      width: 100vw;
+      height: 300px;
+      background-color: orange;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-content-section-2 {
+      display: flex;
+      width: 100vw;
+      height: 300px;
+      background-color: wheat;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .main-content-section-3 {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 12px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 190px;
+      height: 130px;
+      border-radius: 8px;
+      background-color: #efefef;
+      gap: 8px;
+      overflow: hidden;
+    }
+
+    .card h2 {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .card-tag {
+      border-radius: 999px;
+      background-color: white;
+      padding: 6px 8px;
+      border: 1px solid #1a1a1a;
+    }
+
+    .third-header {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .big-card {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .big-card img {
+      width: 100%;
+      border-radius: 8px;
+      background-color: white;
+    }
+
+    .big-card span {
+      color: #999;
+      font-weight: 600;
+    }
+
+    .profile-container {
+      display: flex;
+      flex: 1;
+
+      gap: 4px;
+    }
+
+    .profile-image {
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background-color: orange;
+    }
+
+    .icons-container {
+      display: flex;
+    }
+
+    .icon-mockup {
+      width: 16px;
+      height: 16px;
+      background-color: orange;
+      border-radius: 999px;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .space-between {
+      justify-content: space-between;
+    }
+
+    .button-icon {
+      display: flex;
+      gap: 4px;
+    }
+
+    .gap-12 {
+      gap: 12px;
+    }
+
+    .pagination-container {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      background-color: #e4e5e5;
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .pagination-prev {
+      width: 16px;
+      height: 16px;
+      background-color: orange;
+      border-radius: 999px;
+    }
+
+    .pagination-next {
+      width: 16px;
+      height: 16px;
+      background-color: orange;
+      border-radius: 999px;
+    }
+
+    .main-content-section-4 {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(245, 245, 245);
+      min-height: 300px;
+      justify-content: "center";
+      align-items: "center";
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    .main-content-section-4 h1 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .main-content-section-4 .card {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 4px;
+    }
+
+    .main-content-section-4 .card-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .main-content-section-4 .card .numbering {
+      text-align: center;
+      background-color: rgb(228, 229, 229);
+      border-radius: 999px;
+      padding: 5px 12px;
+    }
+
+    .main-content-section-4 .card p {
+      line-height: 14px;
+    }
+  </style>
+
+  <body>
+    <main class="container">
+      <div class="main-content-section-1">
+        <img src="https://placehold.co/600x400" width="191" height="141" />
+      </div>
+
+      <div class="main-content-section-2">
+        <h2>지금 이 시대를 사는</h2>
+        <h2>나의 지식을 나눠주세요</h2>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="card-tag">전체</div>
+
+            <h2>지식? 새롭게 쓰자!</h2>
+            <h2>뉴뉴컵</h2>
+          </div>
+
+          <div class="card">
+            <div class="card-tag">전체</div>
+
+            <h2>지식? 새롭게 쓰자!</h2>
+            <h2>뉴뉴컵</h2>
+          </div>
+
+          <div class="card">
+            <div class="card-tag">전체</div>
+
+            <h2>지식? 새롭게 쓰자!</h2>
+            <h2>뉴뉴컵</h2>
+          </div>
+
+          <div class="card">
+            <div class="card-tag">전체</div>
+
+            <h2>지식? 새롭게 쓰자!</h2>
+            <h2>뉴뉴컵</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content-section-3">
+        <div class="third-header">
+          <div>전체</div>
+          <div style="display: flex; gap: 12px">
+            <span>최신순</span><span>주간 인기순</span><span>인기순</span>
+          </div>
+        </div>
+
+        <div class="big-card">
+          <img src="https://placehold.co/600x400" alt="Image Placeholder" />
+
+          <span><span style="color: orange">0</span>명이 응원했어요.</span>
+
+          <p>[독서모임] 방향성 있는 질문 만드는 법</p>
+
+          <div class="flex space-between gap-12">
+            <div class="profile-container">
+              <div class="profile-image"></div>
+              <p>북프렌즈</p>
+            </div>
+            <div class="icons-container"></div>
+
+            <div class="button-icon">
+              <div class="icon-mockup"></div>
+              <div>0</div>
+            </div>
+
+            <div class="button-icon">
+              <div class="icon-mockup"></div>
+              <div>0</div>
+            </div>
+
+            <div class="button-icon">
+              <div class="icon-mockup"></div>
+              <div>0</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination-container">
+          <div class="pagination-prev"></div>
+          <div style="color: orange">1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div class="pagination-next"></div>
+        </div>
+      </div>
+
+      <div class="main-content-section-4">
+        <h1>이렇게 참여해보세요.</h1>
+
+        <div class="card-container">
+          <div class="card">
+            <div class="numbering">1</div>
+
+            <p>뉴닉 웹사이트에서</p>
+
+            <p>아티클을</p>
+
+            <p>작성해주세요</p>
+          </div>
+
+          <div class="card">
+            <div class="numbering">2</div>
+
+            <p>작성한 아티클을</p>
+
+            <p>주제별로 모아</p>
+
+            <p>시리즈를 만들면</p>
+
+            <p>끝!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
