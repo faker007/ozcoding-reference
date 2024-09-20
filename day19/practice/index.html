@@ -62,6 +62,62 @@
         height: 50px;
         background-color: bisque;
       }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+      }
+
+      .grid-container-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+      }
+
+      .grid-container-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media (max-width: 600px) {
+        .grid-container-3 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      p {
+        font-size: 24px;
+      }
+
+      @media (max-width: 800px) {
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .box1 {
+        position: absolute;
+        z-index: 10;
+        background-color: lightblue;
+        width: 100px;
+        height: 100px;
+      }
+
+      .box2 {
+        position: absolute;
+        z-index: 1;
+        background-color: lightcoral;
+        width: 200px;
+        height: 100px;
+        top: 50px;
+        left: 50px;
+      }
     </style>
   </head>
 
@@ -70,11 +126,81 @@
     <!-- <div class="absolute"></div> -->
     <!-- <div class="fixed d"></div> -->
     <!-- <div class="sticky d"></div> -->
-    <div class="container">
+
+    <!-- <div class="container">
       <div class="flex-item">1</div>
       <div class="flex-item">2</div>
       <div class="flex-item">3</div>
       <div class="flex-item">4</div>
+    </div> -->
+
+    <!-- <div class="grid-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </div> -->
+
+    <!-- <div class="grid-container-2">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div> -->
+
+    <!-- <div class="grid-container-3">
+      <div class="item"><p>1</p></div>
+      <div class="item"><p>2</p></div>
+      <div class="item"><p>3</p></div>
+      <div class="item"><p>4</p></div>
+    </div> -->
+
+    <!-- <div
+      style="
+        position: relative;
+        z-index: 2;
+        background-color: lightblue;
+        width: 100px;
+        height: 100px;
+      "
+    >
+      Box 1
+    </div>
+
+    <div
+      style="
+        position: relative;
+        z-index: 1;
+        background-color: lightcoral;
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+      "
+    >
+      Box 2
+    </div> -->
+
+    <!-- <div class="box1">Box1</div>
+
+    <div class="box2">Box2</div> -->
+
+    <div style="position: relative; z-index: 1; background-color: lightgray">
+      부모 요소
+      <div
+        style="
+          position: absolute;
+          z-index: 10;
+          background-color: lightblue;
+          width: 50px;
+          height: 50px;
+        "
+      >
+        자식 요소
+      </div>
+    </div>
+
+    <div style="position: relative; z-index: 2; background-color: lightcoral">
+      다른 요소
     </div>
   </body>
 </html>
