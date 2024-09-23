@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>미디어 쿼리 기본 문법 예시</title>
+
+    <style>
+      :root {
+        --main-bg-color: blue;
+      }
+
+      body {
+        /* clamp (최솟값, 유동적으로 늘어나는 값, 최댓값) */
+        font-size: clamp(18px, 10.5vw, 60px);
+      }
+
+      /* 768px 이하의 화면에서 글꼴 크기를 14px로 설정 */
+      /* @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+      } */
+
+      .container {
+        width: max(50vw, 900px);
+        height: 50vh;
+        background-color: var(--main-bg-color);
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>나는 paragraph입니다.</p>
+    <span>나는 span입니다.</span>
+    <div class="container"></div>
+  </body>
+</html>
