@@ -1,0 +1,124 @@
+<!-- Doordash landing page-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Doordash landing page</title>
+
+    <style>
+      /* Reset CSS*/
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      span,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --grey-text: #606060;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .header {
+        display: flex;
+        background-color: white;
+        gap: 8px;
+        padding-top: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      .header .icon {
+        width: 64px;
+        height: 64px;
+        background-color: tomato;
+        border-radius: 8px;
+      }
+
+      .header .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .header .star-container {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+      }
+
+      .header .star {
+        width: 11px;
+        height: 11px;
+        background-color: gold;
+        border-radius: 999px;
+      }
+
+      .header .cta-button {
+        display: flex;
+        background-color: tomato;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        border-radius: 999px;
+        height: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-weight: 700;
+        align-self: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="icon"></div>
+
+        <div class="text-container">
+          <p style="font-size: 18px; font-weight: 700">
+            Browse faster in the app
+          </p>
+
+          <p style="font-size: 14px; color: var(--grey-text)">
+            $0 delivery fee on first order
+          </p>
+
+          <div style="display: flex; gap: 8px">
+            <div class="star-container">
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+            </div>
+
+            <span style="font-size: 14px; color: var(--grey-text)">
+              18.2M ratings
+            </span>
+          </div>
+        </div>
+
+        <div style="display: flex; flex: 1"></div>
+
+        <div class="cta-button">Open</div>
+      </header>
+    </div>
+  </body>
+</html>
