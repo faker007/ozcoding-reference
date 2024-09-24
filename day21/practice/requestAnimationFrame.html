@@ -26,7 +26,7 @@
 
       @keyframes slideIn {
         from {
-          transform: translateX(100%);
+          transform: translateX(150%);
         }
 
         to {
@@ -40,12 +40,60 @@
         height: 200px;
         background-color: chartreuse;
       }
+
+      .my-animation {
+        animation: slideIn 0.5s forwards;
+      }
+
+      button:active {
+        transform: scale(0.95);
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+
+        25% {
+          transform: translateX(-5px);
+        }
+
+        50% {
+          transform: translateX(5px);
+        }
+
+        75% {
+          transform: translateX((-5px));
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .notification {
+        animation: shake 0.5s ease-in-out;
+      }
+
+      .page-transition {
+        opacity: 0;
+        transition: opacity 0.75s ease-in-out;
+      }
     </style>
+
+    <script>
+      // 페이지가 로딩 될 때, fadeIn 효과
+      window.addEventListener("load", () => {
+        document.querySelector(".page-transition").style.opacity = 1;
+      });
+    </script>
   </head>
 
-  <body>
+  <body class="page-transition">
     <div id="box"></div>
 
+    <div class="box"></div>
+    <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
@@ -76,9 +124,14 @@
       }
 
       startBtn.addEventListener("click", () => {
-        flag = false;
+        // flag = false;
 
-        animationId = requestAnimationFrame(moveBox);
+        // animationId = requestAnimationFrame(moveBox);
+        const boxes = document.querySelectorAll(".box");
+
+        boxes.forEach((box, index) => {
+          box.classList.add("notification");
+        });
       });
 
       stopBtn.addEventListener("click", () => {
@@ -86,6 +139,14 @@
 
         cancelAnimationFrame(animationId);
       });
+
+      const boxes = document.querySelectorAll(".box");
+
+      //   boxes.forEach((box, index) => {
+      //     setTimeout(() => {
+      //       box.classList.add("my-animation");
+      //     }, index * 500);
+      //   });
     </script>
   </body>
 </html>
