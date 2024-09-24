@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="box"></div>
+
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+
+    <script>
+      const startBtn = document.getElementById("startBtn");
+      const stopBtn = document.getElementById("stopBtn");
+
+      let position = 0;
+      let animationId;
+      let flag = false; // false일 때만 스타트.
+
+      const box = document.getElementById("box");
+
+      function moveBox() {
+        position += 1;
+
+        box.style.transform = `translateX(${position}px)`;
+
+        if (position < 300 && !flag) {
+          requestAnimationFrame(moveBox);
+        }
+      }
+
+      startBtn.addEventListener("click", () => {
+        flag = false;
+
+        animationId = requestAnimationFrame(moveBox);
+      });
+
+      stopBtn.addEventListener("click", () => {
+        flag = true;
+
+        cancelAnimationFrame(animationId);
+      });
+    </script>
+  </body>
+</html>
