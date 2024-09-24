@@ -12,14 +12,48 @@
         height: 100px;
         background-color: brown;
       }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        transition: transform 0.5s ease;
+      }
+
+      .box:hover {
+        transform: translateX(100px);
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(100%);
+        }
+
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      #modal {
+        animation: slideIn 0.5s forwards;
+        width: 100px;
+        height: 200px;
+        background-color: chartreuse;
+      }
     </style>
   </head>
 
   <body>
     <div id="box"></div>
 
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
     <button id="startBtn">Start</button>
     <button id="stopBtn">Stop</button>
+
+    <div id="modal"></div>
 
     <script>
       const startBtn = document.getElementById("startBtn");
