@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>간단한 웹 페이지 시연</title>
+  </head>
+
+  <body>
+    <p id="title">Welcome to JavaScript DOM</p>
+
+    <button id="changeButton">Change Text</button>
+
+    <script>
+      const title = document.getElementById("title");
+      const button = document.getElementById("changeButton");
+
+      button.addEventListener("click", () => {
+        // title.textContent = "클릭 완";
+        title.innerHTML = "<strong>클릭 완</strong>";
+      });
+    </script>
+  </body>
+</html>

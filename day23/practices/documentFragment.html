@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <div id="host"></div>
+  </head>
+
+  <body>
+    <script>
+      const fragment = document.createDocumentFragment();
+      const list = document.getElementById("list");
+
+      for (let i = 0; i < 100; i++) {
+        const div = document.createElement("div");
+
+        div.textContent = `Element ${i}`;
+        div.style.cssText =
+          "width: 100px; height: 200px; background-color: blue; margin-bottom:20px;";
+
+        fragment.appendChild(div);
+      }
+
+      list.addEventListener("click", (event) => {
+        console.log(event.target.tagName);
+
+        if (event.target.tagName === "LI") {
+          console.log("Yo man");
+        }
+      });
+
+      // document.body.append(fragment);
+
+      const host = document.getElementById("host");
+      const shadowRoot = host.attachShadow({ mode: "open" });
+
+      const shadowContent = document.createElement("p");
+
+      shadowContent.textContent = "이것은 Shadow DOM";
+
+      shadowRoot.appendChild(shadowContent);
+
+      console.log(shadowRoot.parentNode);
+    </script>
+  </body>
+</html>
