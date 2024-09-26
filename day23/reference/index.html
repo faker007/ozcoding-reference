@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1 id="heading"></h1>
+
+    <button id="button">저를 눌러보세요</button>
+
+    <script>
+      // 문제 1번: DOM이란 -> JavaScript를 통해서, HTML 요소를 선택할 수 있게 해주는 트리 구조.
+      const h1 = document.getElementById("heading");
+
+      // 문제 2-1번: getElementById -> 엘리먼트 요소를 id를 통해서 선택
+      document.getElementById("heading");
+
+      // 문제 2-2번: querySelector -> CSS 선택자를 통해서 엘리먼트 요소를 선택할 수 있음.
+      document.querySelector(".heading"); // -> class
+      document.querySelector("#heading"); // -> id
+
+      // 문제 2-3번: getElementsByClassName -> class를 통해서 모든 엘리먼트 요소를 선택할 수 있음.
+      document.getElementsByClassName(".heading");
+
+      // 문제 3번
+      const button = document.getElementById("button");
+      button.addEventListener("click", () => {
+        console.log("Button Clicked!");
+      });
+
+      // 문제 4번
+      // BOM이란? ??Bomb?? Object Model
+      window.location.href = "https://naver.com";
+
+      // 문제 5번
+      window.history; // 사용자의 브라우징 히스토리를 기록하고 있는 배열
+      window.history.back(); // 뒤로가기.
+      window.history.forward(); // 앞으로 가기.
+
+      // 문제 6번: CSSOM JavaScript를 통해서, 스타일 요소를 지정 할 수 있게 해줌.
+      button.style.fontSize = "16px";
+
+      // 문제 7번: Reflow -> 레이아웃, Repaint -> 실제로 화면에 그리는 것.
+
+      // 문제 8번: var, let, const를 빼놓고 이야기 할 수 없는데...
+
+      // 문제 9번: 스택 FILO 구조로 돼 있는 자료 구조 중 하나이다.
+
+      // 문제 10번: 이벤트 루프? 자바스크립트는 싱글 스레드 언어라고 하는데, 어떻게 비동기 작업을 처리할 수 있을까요?
+      // 그 비밀은 이벤트 루프에 있습니다.
+    </script>
+  </body>
+</html>
