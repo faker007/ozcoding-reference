@@ -11,10 +11,21 @@
 
     <p id="paragraph">World!</p>
 
+    <a href="https://naver.com">네이버로 이동!</a>
+
+    <input type="text" class="my-input" />
+
+    <button>경고, 이건 경고</button>
+
     <script>
       // Document Object Model의 신비로움.
+      const body = document.querySelector("body");
+
       const heading = document.getElementById("heading");
       const paragraph = document.getElementById("paragraph");
+      const link = document.querySelector("a");
+      const button = document.querySelector("button");
+      const input = document.querySelector(".my-input");
 
       // 1초 뒤에 New Heading Text로 변경
 
@@ -22,9 +33,33 @@
       // innerHTML는 HTML 요소를 포함할 수 있음.
       setTimeout(() => {
         heading.textContent = "New Heading Text";
+        heading.style.color = "blue";
+        heading.style.fontSize = "48px";
 
         paragraph.innerHTML = "<strong>Hello world!</strong>";
+
+        link.setAttribute("href", "https://google.com");
+        link.textContent = "구글로 이동!";
       }, 1000);
+
+      button.addEventListener("click", (event) => {
+        alert("경고, 이건 경고");
+
+        console.log(event);
+      });
+
+      let keyPass = "";
+
+      //   "keydown" 등 키보드 입력 이벤트를 통해서, 주로 웹 사이트에서 단축키를 만들 수가 있음.
+      input.addEventListener("keydown", (event) => {
+        console.log(event.key);
+
+        keyPass += event.key;
+
+        if (keyPass === "qw") {
+          alert("비밀을 푸셨습니다!");
+        }
+      });
     </script>
   </body>
 </html>
