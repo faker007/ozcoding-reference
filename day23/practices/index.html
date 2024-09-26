@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1 id="heading">Hello!</h1>
+
+    <p id="paragraph">World!</p>
+
+    <script>
+      // Document Object Model의 신비로움.
+      const heading = document.getElementById("heading");
+      const paragraph = document.getElementById("paragraph");
+
+      // 1초 뒤에 New Heading Text로 변경
+
+      // textContent는 텍스트 노드 자체를 변경.
+      // innerHTML는 HTML 요소를 포함할 수 있음.
+      setTimeout(() => {
+        heading.textContent = "New Heading Text";
+
+        paragraph.innerHTML = "<strong>Hello world!</strong>";
+      }, 1000);
+    </script>
+  </body>
+</html>
