@@ -159,5 +159,5 @@ Promise.any([p1, p2, 3])
 
 // 문제20
 const letters = ["x", "y", "z"];
-console.log(letters[letters.length - 1]);
+// console.log(letters[letters.length - 1]);
 console.log(letters.at(-1));
