@@ -1,0 +1,8 @@
+2024-10-15 18:57:47 [INFO]: 새로운 사용자 등록: ID=1728986267202, 이름=gyejin, 이메일=gyejin@naver.com
+2024-10-15 18:57:47 [INFO]: 사용자 등록 완료: {"id":1728986267202,"name":"gyejin","email":"gyejin@naver.com"}
+2024-10-15 18:57:48 [ERROR]: 이메일 전송 오류: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2e392ed396asm1255646a91.21 - gsmtp
+2024-10-15 18:58:44 [INFO]: 새로운 사용자 등록: ID=1728986324818, 이름=gyejin, 이메일=rlaqjadud195@naver.com
+2024-10-15 18:58:44 [INFO]: 사용자 등록 완료: {"id":1728986324818,"name":"gyejin","email":"rlaqjadud195@naver.com"}
+2024-10-15 18:58:45 [ERROR]: 이메일 전송 오류: Invalid login: 534-5.7.9 Application-specific password required. For more information, go to
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d9443c01a7336-20d17f9a0cbsm8592555ad.81 - gsmtp
