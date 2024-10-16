@@ -9,24 +9,37 @@
       <input id="input" autocomplete="off" /><button>Send</button>
     </form>
     <script src="/socket.io/socket.io.js"></script>
+
     <script>
+      // Client에서 Server로 연결 시도
       const socket = io();
+
+      // DOMs
       const form = document.getElementById("form");
       const input = document.getElementById("input");
       const messages = document.getElementById("messages");
 
+      // DOM Event
       form.addEventListener("submit", function (e) {
         e.preventDefault();
+
         if (input.value) {
+          //! 핵심 기능. Client -> Server
           socket.emit("chat message", input.value);
+
           input.value = "";
         }
       });
 
+      //! 핵심 기능2. Server -> Client
       socket.on("chat message", function (msg) {
+        // DOMs
         const item = document.createElement("li");
+
         item.textContent = msg;
+
         messages.appendChild(item);
+
         window.scrollTo(0, document.body.scrollHeight);
       });
     </script>
