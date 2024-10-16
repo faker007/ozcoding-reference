@@ -3,12 +3,18 @@
     "id": "df3c8e7a-28ea-43e6-a35f-5fd208152394",
     "title": "안녕하세요.",
     "description": "",
-    "completed": false
+    "completed": true
   },
   {
     "id": "b377d879-60f1-42c7-afaf-b856f0bd30c5",
     "title": "싫어요",
     "description": "싫어요!!!",
+    "completed": true
+  },
+  {
+    "id": "8d6f1d64-a590-47b1-856f-e774fb68f322",
+    "title": "대박인데요",
+    "description": "무야호호",
     "completed": false
   }
 ]

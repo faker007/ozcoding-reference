@@ -35,4 +35,4 @@ async function addTodo() {
   console.log(chalk.green("할 일이 성공적으로 추가되었습니다!"));
 }
 
-addTodo();
+export { addTodo };
