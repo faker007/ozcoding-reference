@@ -1,4 +1,4 @@
-무야호
-나는야
-인풋
-inpu.txt
+This is some sample text.
+ Appending some more text.
+ Appending some more text.
+ Appending some more text.
