@@ -1,0 +1,3 @@
+Hello, Node.js Stream!
+Writing more data...
+Finished writing.
