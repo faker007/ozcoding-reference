@@ -1,0 +1,3 @@
+GET /protected HTTP/1.1
+Host: localhost:3000
+Authorization: Bearer zyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MjkyNDYwOTAsImV4cCI6MTcyOTI0OTY5MH0.6rsC1noN1lEPwVu_2SnNFPaEE-8e7YOvLW8lTu38GLU

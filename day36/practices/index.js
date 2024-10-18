@@ -47,6 +47,7 @@ const authenticateJWT = (req, res, next) => {
       }
 
       req.user = user;
+
       next();
     });
   } else {
