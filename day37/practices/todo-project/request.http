@@ -1,0 +1,21 @@
+### 할 일 추가
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+    "task": "Node.js 학습"
+}
+
+### 모든 할 일 조회
+GET http://localhost:3000/todos
+
+### 특정 할 일 수정
+PUT http://localhost:3000/todos/3
+Content-Type: application/json
+
+{
+    "task": "업데이트된 작업"
+}
+
+### 특정 할 일 삭제
+DELETE http://localhost:3000/todos/{{todoId}}
