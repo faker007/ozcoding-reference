@@ -1,0 +1,11 @@
+### 로그인 시도
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "email": "test100@test.com",
+    "password": "123456"
+}
+
+### 로그인 후 보호된 라우트 접근 시도
+GET http://localhost:3000/protected

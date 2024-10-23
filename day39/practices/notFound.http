@@ -1,0 +1,11 @@
+### 로그인 시도
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "user",
+    "password": "pass"
+}
+
+### 로그인 후 보호된 라우트 접근 시도
+GET http://localhost:3000/1234
