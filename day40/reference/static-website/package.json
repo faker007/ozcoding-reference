@@ -1,5 +1,5 @@
 {
-  "name": "practices",
+  "name": "static-website",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cookie-parser": "^1.4.7",
-    "express": "^4.21.1",
-    "express-session": "^1.18.1",
-    "jsonwebtoken": "^9.0.2"
+    "express": "^4.21.1"
   }
 }
