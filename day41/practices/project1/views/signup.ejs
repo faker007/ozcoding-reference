@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+  </head>
+
+  <body>
+    <h1>회원가입</h1>
+    <% if (error) { %>
+    <p class="error"><%= error %></p>
+    <% } %>
+
+    <form action="/signup" method="POST">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+
+      <label for="username">사용자명:</label>
+
+      <input type="text" id="username" name="username" required minlength="3" />
+
+      <br />
+
+      <label for="email">이메일:</label>
+
+      <input type="text" id="email" name="email" required />
+
+      <br />
+
+      <label for="password">비밀번호:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        minlength="6"
+      />
+
+      <br />
+
+      <label for="confirmPassword">비밀번호 확인:</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        required
+        minlength="6"
+      />
+      <br />
+
+      <button type="submit">가입하기</button>
+    </form>
+    <p>이미 회원이신가요? <a href="/login"></a></p>
+  </body>
+</html>
