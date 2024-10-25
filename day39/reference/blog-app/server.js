@@ -24,6 +24,9 @@ app.use(
     secret: "secret-key", // 실제 환경에서는 안전한 비밀키를 사용하세요
     resave: false,
     saveUninitialized: false,
+    cookie: {
+      maxAge: 36000000,
+    },
   })
 );
 
