@@ -1,0 +1,48 @@
+### 회원가입
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username": "user1234",
+    "password": "user1234"
+}
+
+### 로그인
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "user1234",
+    "password": "user1234"
+}
+
+### 글 작성
+POST http://localhost:3000/posts/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MWY1ZTg5NDRhMGRlNjdlZjkyMGIzYyIsImlhdCI6MTczMDEwOTIyOCwiZXhwIjoxNzMwMTEyODI4fQ.IoP97hui6jNMGVtQvoavlHJiWV5CALNzqLGip-6avY8
+
+{
+    "title": "user12341234124",
+    "content": "user1234123412341242"
+}
+
+### 모든 게시글 조회
+GET http://localhost:3000/posts
+
+### 특정 게시글 조회
+GET http://localhost:3000/posts/671f5f9f9b3d4a2413cbddb2
+
+### 특정 게시글 수정
+PUT http://localhost:3000/posts/671f5f9f9b3d4a2413cbddb2
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MWY1ZTg5NDRhMGRlNjdlZjkyMGIzYyIsImlhdCI6MTczMDEwOTIyOCwiZXhwIjoxNzMwMTEyODI4fQ.IoP97hui6jNMGVtQvoavlHJiWV5CALNzqLGip-6avY8
+
+{
+    "title": "수정된 제목",
+    "content": "수정된 콘텐츠"
+}
+
+### 특정 게시글 삭제
+DELETE http://localhost:3000/posts/671f5f9f9b3d4a2413cbddb2
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MWY1ZTg5NDRhMGRlNjdlZjkyMGIzYyIsImlhdCI6MTczMDEwOTIyOCwiZXhwIjoxNzMwMTEyODI4fQ.IoP97hui6jNMGVtQvoavlHJiWV5CALNzqLGip-6avY8
