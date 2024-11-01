@@ -7,6 +7,7 @@ import Store from "./components/Store";
 import UserProfile from "./components/UserProfile";
 import TodoItem from "./components/TodoItem";
 import TodoList from "./components/TodoList";
+import TodoApp from "./components/TodoApp";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <>
-      <TodoList />
+      {/* <TodoList />
 
       <Greeting name="홍길동" />
       <Greeting name="김철수" />
@@ -44,7 +45,9 @@ function App() {
 
       <button onClick={changeHobby}>취미 변경</button>
 
-      <Store />
+      <Store /> */}
+
+      <TodoApp />
     </>
   );
 }
