@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./App.css";
+import CounterControls from "./components/CounterControls";
 import CounterDisplay from "./components/CounterDisplay";
 import Greeting from "./components/Greeting";
-import CounterControls from "./components/CounterControls";
+import Store from "./components/Store";
 import UserProfile from "./components/UserProfile";
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
       <UserProfile username={user.username} age={user.age} hobby={user.hobby} />
 
       <button onClick={changeHobby}>취미 변경</button>
+
+      <Store />
     </>
   );
 }
