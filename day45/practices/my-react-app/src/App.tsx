@@ -5,6 +5,8 @@ import CounterDisplay from "./components/CounterDisplay";
 import Greeting from "./components/Greeting";
 import Store from "./components/Store";
 import UserProfile from "./components/UserProfile";
+import TodoItem from "./components/TodoItem";
+import TodoList from "./components/TodoList";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +15,12 @@ function App() {
     age: 25,
     hobby: "독서",
   });
+
+  const [todos, setTodos] = useState([
+    { id: 1, text: "React 학습", completed: false },
+    { id: 2, text: "코딩 연습", completed: false },
+    { id: 3, text: "블로그 글 작성", completed: false },
+  ]);
 
   const increment = () => setCount(count + 1);
   const decrement = () => setCount(count - 1);
@@ -23,6 +31,8 @@ function App() {
 
   return (
     <>
+      <TodoList />
+
       <Greeting name="홍길동" />
       <Greeting name="김철수" />
       <Greeting name="이영희" />
