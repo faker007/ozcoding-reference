@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import UserGreeting from "./UserGreeting";
 
 const LoginControl = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -19,6 +20,8 @@ const LoginControl = () => {
           <button onClick={handleLogin}>Login</button>
         </div>
       )}
+
+      <UserGreeting isLoggedIn={isLoggedIn} />
     </div>
   );
 };
