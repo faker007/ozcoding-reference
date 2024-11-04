@@ -1,5 +1,6 @@
 import "./App.css";
 import Calculator from "./components/Calculator";
+import ToggleMessage from "./components/ToggleMessage";
 import Weclome from "./components/Welcome";
 
 function App() {
@@ -8,6 +9,8 @@ function App() {
       <Calculator />
 
       <Weclome username={"faker337"} />
+
+      <ToggleMessage />
     </div>
   );
 }
