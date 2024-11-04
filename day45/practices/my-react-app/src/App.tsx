@@ -17,6 +17,13 @@ function App() {
     hobby: "독서",
   });
 
+  function d() {
+    setCount(200);
+    setCount((prevCount) => {
+      return prevCount + 100;
+    });
+  }
+
   const [todos, setTodos] = useState([
     { id: 1, text: "React 학습", completed: false },
     { id: 2, text: "코딩 연습", completed: false },
@@ -30,8 +37,13 @@ function App() {
     setUser({ ...user, hobby: "운동" });
   };
 
+  setTimeout(() => {
+    d();
+  }, 1000);
+
   return (
     <>
+      <p>{count}</p>
       {/* <TodoList />
 
       <Greeting name="홍길동" />
