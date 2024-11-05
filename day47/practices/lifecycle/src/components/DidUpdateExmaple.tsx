@@ -10,7 +10,7 @@ class DidUpdateExample extends Component {
     };
   }
 
-  componentDidMount(): void {
+  componentDidMount() {
     this.setState({
       ...this.state,
       count: localStorage.getItem("count")
@@ -19,11 +19,7 @@ class DidUpdateExample extends Component {
     });
   }
 
-  componentDidUpdate(
-    prevProps: Readonly<{}>,
-    prevState: Readonly<{}>,
-    snapshot?: any
-  ): void {
+  componentDidUpdate(prevProps, prevState, snapshot?: any): void {
     if (prevState.count !== this.state.count) {
       console.log(
         `카운트가 ${prevState.count}에서 ${this.state.count}으로 변경되었습니다.`
