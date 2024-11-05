@@ -4,6 +4,7 @@ import ShouldUpdateExample from "./components/\bShouldComponentUpdate";
 import DerivedStateExample from "./components/DerivedStateExample";
 import LifecycleDemo from "./components/LifeCycleDemo";
 import LifecycleOverview from "./components/LifeCycleOverview";
+import SnapshotExample from "./components/SnapshotExample";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <RenderExample />
 
       <ShouldUpdateExample />
+
+      <SnapshotExample />
     </>
   );
 }
