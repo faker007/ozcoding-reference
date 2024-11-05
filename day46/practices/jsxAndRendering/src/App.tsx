@@ -7,8 +7,9 @@ import Panel from "./components/Panel";
 import Profile from "./components/Profile";
 import SecretMessage from "./components/SecretMessage";
 import ToggleMessage from "./components/ToggleMessage";
-import Weclome from "./components/Welcome";
+import UserList from "./components/UserList";
 import VeicleStatus from "./components/VehicleStatus";
+import Weclome from "./components/Welcome";
 
 function App() {
   const [user, setUser] = useState<{
@@ -22,6 +23,10 @@ function App() {
     isAdmin: false,
     age: -1,
   });
+
+  const [showMessage, setShowMessage] = useState(false);
+
+  const toggleMessage = () => setShowMessage(!showMessage);
 
   useEffect(() => {
     // Simulate API fetching
@@ -37,7 +42,15 @@ function App() {
 
   return (
     <div>
-      <Calculator />
+      <h1>Conditional Rendering Practice</h1>
+
+      <button onClick={toggleMessage}>
+        {showMessage ? "Hide" : "Show"} Message
+      </button>
+
+      {showMessage && <p>This is a conditionally rendered message.</p>}
+
+      {/* <Calculator />
 
       <Weclome username={"faker337"} />
 
@@ -54,6 +67,8 @@ function App() {
       <Profile user={user} />
 
       <VeicleStatus status="available" />
+
+      <UserList /> */}
     </div>
   );
 }
