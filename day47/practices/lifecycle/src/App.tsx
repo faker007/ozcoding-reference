@@ -2,6 +2,7 @@ import "./App.css";
 import RenderExample from "./components/\bRenderExample";
 import ShouldUpdateExample from "./components/\bShouldComponentUpdate";
 import DerivedStateExample from "./components/DerivedStateExample";
+import DidUpdateExample from "./components/DidUpdateExmaple";
 import LifecycleDemo from "./components/LifeCycleDemo";
 import LifecycleOverview from "./components/LifeCycleOverview";
 import SnapshotExample from "./components/SnapshotExample";
@@ -9,17 +10,19 @@ import SnapshotExample from "./components/SnapshotExample";
 function App() {
   return (
     <>
-      <LifecycleDemo />
+      <DidUpdateExample />
 
-      <LifecycleOverview />
+      {/* <LifecycleDemo /> */}
 
-      <DerivedStateExample initialValue={12345} />
+      {/* <LifecycleOverview /> */}
 
-      <RenderExample />
+      {/* <DerivedStateExample initialValue={12345} /> */}
 
-      <ShouldUpdateExample />
+      {/* <RenderExample /> */}
 
-      <SnapshotExample />
+      {/* <ShouldUpdateExample /> */}
+
+      {/* <SnapshotExample /> */}
     </>
   );
 }
